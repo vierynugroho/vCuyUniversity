@@ -167,3 +167,22 @@ header nav button#check:hover {
     font-size: 1em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 180px;
+    perspective: 1000px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardInner {
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    border: 1px dashed white;
+    border-radius: 10px;
+  }
+}
