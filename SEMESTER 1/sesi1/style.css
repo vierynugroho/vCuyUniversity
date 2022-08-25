@@ -1,0 +1,178 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+/* HEAD START */
+header {
+  display: flex;
+  width: 100vw;
+  background-color: #333;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+nav ul {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: flex;
+  margin: 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 500;
+}
+/* HEAD END */
+
+/* MAIN START */
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#home {
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+}
+
+.home {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeTitle {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.homeImg img {
+  width: 80%;
+  height: auto;
+}
+
+section#history {
+  background-color: aliceblue;
+}
+
+section#hero {
+  background-color: #333;
+}
+
+.historyTitle {
+  padding-top: 30px;
+  font-size: 2em;
+  color: red;
+}
+
+.heroTitle {
+  padding-top: 30px;
+  font-size: 2em;
+  color: aliceblue;
+}
+
+.informationTitle {
+  padding-top: 30px;
+  font-size: 2em;
+  color: #333;
+}
+
+.card {
+  width: 80vw;
+  height: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerInformation {
+  width: 80vw;
+  height: 80vw;
+  text-align: justify;
+}
+
+.cardItem {
+  margin: 5px;
+  text-align: center;
+}
+
+.cardItem:hover {
+  transform: rotate(13deg) translate(1px, 0px);
+}
+
+.cardItem h2 {
+  font-size: 1.2em;
+}
+
+#hero .cardItem h2 {
+  color: aliceblue;
+}
+
+.cardItem img {
+  width: 260px;
+  height: 140px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 5px 18px 2px rgba(218, 206, 206, 0.63);
+}
+
+#hero .cardItem img {
+  width: 160px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 5px 18px 2px rgba(218, 206, 206, 0.63);
+}
+
+/* Information */
+
+p {
+  text-align: justify;
+  color: #333;
+}
+
+span {
+  font-weight: bold;
+  color: red;
+  font-size: 1.4em;
+}
+
+/* MAIN END */

@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(66, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 1%;
+  width: 98vw;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.lampRoom {
+  margin-top: 1%;
+  width: 90vw;
+  height: 90vh;
+  background-color: azure;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  border: 5px solid rgb(8, 1, 1);
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+
+.cardLamp {
+  max-width: 20%;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.cardLamp img {
+  width: 250px;
+}
+
+.cardLamp button {
+  width: 98%;
+  color: white;
+  border: none;
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 0 3px 0;
+  margin: 5px 0 10px 0;
+}
+
+.cardLamp button:hover {
+  box-shadow: 0px 2px 0px 2px rgb(82, 1, 1);
+}
+
+button {
+  width: 94%;
+  color: white;
+  border: none;
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 0 3px 0;
+  margin: 5px 0 10px 0;
+}
+
+button:hover {
+  box-shadow: 0px 2px 0px 2px rgb(82, 1, 1);
+}
+
+.titleRoom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

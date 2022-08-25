@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .logo a {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header nav .logo span {
+  font-size: 1.4em;
+}
+
+header nav button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header nav button#check {
+  padding: 2px 6px;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+header nav button:hover {
+  color: red;
+}
+
+header nav button#check:hover {
+  font-size: 0.8em;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.profile h5 {
+  color: red;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+.profile h4 {
+  color: white;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container h1 span {
+  color: red;
+  font-weight: bold;
+}
+
+/* Card */
+.card {
+  max-width: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardInner {
+  /* position: relative; */
+  width: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  border: 1px dashed white;
+  border-radius: 10px;
+}
+
+.front {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #333;
+  color: aliceblue;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateX(180deg);
+}
+
+.back h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.back h4 a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.back h4 a:hover {
+  color: blue;
+}
+
+.back p {
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.card:hover .cardInner {
+  transform: rotateX(-180deg);
+}
+
+/* End Card */
+
+@media screen and (min-width: 995px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    align-items: center;
+    font-size: 1em;
+  }
+}

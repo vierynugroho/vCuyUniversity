@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS start -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS end -->
+
+    <title>Lamp | VCode</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="lampRoom">
+        <div class="titleRoom">
+          <h1>Ruang Keluarga</h1>
+        </div>
+        <!-- Lampu 1 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu1" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 1)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off', 1)">Turn Off</button>
+        </div>
+
+        <!-- Lampu 2 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu2" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 2)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',2)">Turn Off</button>
+        </div>
+
+        <!-- Lampu 3 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu3" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 3)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',3)">Turn Off</button>
+        </div>
+
+        <!-- lamp room btn -->
+        <div class="allBtn">
+          <button class="btnLamp" onclick="saklarSemua('on', 'keluarga')">Turn On All</button>
+          <button class="btnLamp" onclick="saklarSemua('off', 'keluarga')">Turn Off All</button>
+        </div>
+      </div>
+
+      <div class="lampRoom">
+        <div class="titleRoom">
+          <h1>Ruang Makan</h1>
+        </div>
+        <!-- Lampu 4 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu4" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 4)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',4)">Turn Off</button>
+        </div>
+      </div>
+
+      <div class="lampRoom">
+        <div class="titleRoom">
+          <h1>Ruang Tidur</h1>
+        </div>
+        <!-- Lampu 5 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu5" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 5)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',5)">Turn Off</button>
+        </div>
+
+        <!-- Lampu 6 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu6" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 6)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off', 6)">Turn Off</button>
+        </div>
+
+        <!-- lamp room btn -->
+        <div class="allBtn">
+          <button class="btnLamp" onclick="saklarSemua('on', 'tidur')">Turn On All</button>
+          <button class="btnLamp" onclick="saklarSemua('off', 'tidur')">Turn Off All</button>
+        </div>
+      </div>
+
+      <div class="lampRoom">
+        <div class="titleRoom">
+          <h1>Ruang Tamu</h1>
+        </div>
+        <!-- Lampu 7 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu7" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 7)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',7)">Turn Off</button>
+        </div>
+
+        <!-- Lampu 8 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu8" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 8)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',8)">Turn Off</button>
+        </div>
+
+        <!-- Lampu 9 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu9" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 9)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',9)">Turn Off</button>
+        </div>
+
+        <!-- Lampu 10 -->
+        <div class="cardLamp">
+          <img src="assets/off.png" alt="Lampu Mati" id="lampu10" class="lampu" />
+          <br />
+          <button class="btnLamp" onclick="saklar('on', 10)">Turn On</button>
+          <button class="btnLamp" onclick="saklar('off',10)">Turn Off</button>
+        </div>
+
+        <!-- lamp room btn -->
+        <div class="allBtn">
+          <button class="btnLamp" onclick="saklarSemua('on', 'tamu')">Turn On All</button>
+          <button class="btnLamp" onclick="saklarSemua('off', 'tamu')">Turn Off All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT start -->
+    <script src="script.js"></script>
+    <!-- JAVASCRIPT end -->
+  </body>
+</html>

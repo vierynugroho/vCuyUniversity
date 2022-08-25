@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Session 5</title>
+
+    <!-- CSS Start -->
+    <link rel="stylesheet" href="home.css" />
+    <!-- CSS End -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="home.html"><span>🎓</span>CuyUniversity</a>
+        </div>
+        <div class="navLogin">
+          <input type="text" placeholder="username" id="username" required />
+          <input type="password" placeholder="password" id="password" required />
+          <button id="loginBtn" onclick="onLogin()">LogIn</button>
+          <button id="check">check data</button>
+          <p>don't have an account? <span id="register"> Register</span></p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <button id="showBlogBtn">Show YouTube</button>
+
+      <!-- Register Page -->
+      <div class="registerPage">
+        <div class="containerRegister">
+          <h1>Register</h1>
+          <input type="text" placeholder="username" id="usernameRegister" required />
+          <input type="password" placeholder="password" id="passwordRegister" required />
+          <select id="role">
+            <option value="role" hidden>role</option>
+            <option value="admin">admin</option>
+            <option value="karyawan">karyawan</option>
+            <option value="tamu">tamu</option>
+          </select>
+          <div class="btnRegister">
+            <button id="registerSubmit">Create Account</button>
+            <button id="cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show Data For Login -->
+      <div class="showData">
+        <div class="containerShowData">
+          <h1>Data</h1>
+          <div class="data">
+            <table>
+              <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Role</th>
+              </tr>
+              <!-- add data here -->
+              <div class="addData">
+                <tr>
+                  <td>admin</td>
+                  <td>admin</td>
+                  <td>admin</td>
+                </tr>
+                <tr>
+                  <td>karyawan</td>
+                  <td>karyawan</td>
+                  <td>karyawan</td>
+                </tr>
+                <tr class="newData"></tr>
+              </div>
+              <!-- end add data -->
+            </table>
+            <p id="caution">📍must be refresh page to view update</p>
+          </div>
+          <button id="doneShowDataBtn">Done</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="home.js"></script>
+  </body>
+</html>
